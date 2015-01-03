@@ -8,14 +8,10 @@
    * Set Y = <input checked="checked" type="checkbox" />
    * Set N = <input type="checkbox" />
 -->
-This plugin provides a centralised interface to Foswiki permissions.
-
-Web permissions are presented as a matrix that has columns of webs and rows of users. For each web, you can control which users can view or change that web. All user webs, every registered user (except admin users), and every group (except admin groups) are shown in the matrix.
-
-To interactivly edit topic permissions, it adds an "Edit topic ACLs" option to the "More Actions" page.
+This plugin provides simple graphical interfaces to Foswiki web and topic permissions.
 
 ---++++ Web Permissions
-This interface allows you to control 
+The Web permissions interface shows a matrix that has columns of webs, and rows of users. For each web, you can control which users can view or change that web. All user webs, every registered user (except admin users), and every group (except admin groups) are shown in the matrix.
 <table class="foswikiTable">
 <tr><th width="50%"> Viewing </th><th width="50%"> Editing </th></tr>
 <tr><td>
@@ -42,13 +38,12 @@ VIEW = %V% CHANGE = %C%
 <button>Save</button> <button>Cancel</button>
 </td></tr></table>
 
-<hr />
-
-This control model is very useful in cases such as a web per project environment. In this case you will probably want to give team members change access to the specific projects they are working on. The plugin gives you a simple, one page interface, for handling these permissions.
+This control model is very useful in cases such as a web-per-project environment. In this case you will probably want to give team members change access to the specific projects they are working on. The plugin gives you a simple, one page interface, for handling these permissions.
 
 The plugin tries very hard to keep the permissions specification you started with, though it does move them to METADATA.
 
 ---++++ Topic Permissions
+The Topic permissions interface is designed to be added to the "More Actions" page for each topic. It shows three boxes - users and groups, editors and viewers, and lets you move people and groups from one box to another to configure the deired permissions.
 <!--
    * Set LEFT = <img src="%ATTACHURL%/leftarrow.png"  alt="<"/>
    * Set RIGHT = <img src="%ATTACHURL%/rightarrow.png"  alt=">"/>
